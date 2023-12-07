@@ -13,7 +13,7 @@ const set = (key, value) => {
 };
 
 export const store = (key, value) => {
-   value.id = id++;
+   //    value.id = id++;
    const items = get(key);
    items.unshift(value);
    set(key, items);
